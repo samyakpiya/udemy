@@ -51,7 +51,7 @@ Web components are, simply put custom HTML elements with abstracted functionalit
 
 ## Section 2
 
-### What are Web Components?
+### P20 - What are Web Components?
 
 ```html
 <my-tooltip text="Extra Information">What?</my-tooltip>
@@ -59,6 +59,25 @@ Web components are, simply put custom HTML elements with abstracted functionalit
 
 Web components are custom HTML elements made up of several parts natively available in the browsers specification: custom elements, shadow DOM, templates and slots.
 
-### Browser Support
+### P21 - Browser Support
 
 Web components support all the major web browsers such as Chrome, Firefox, Safari, and Opera. For other browsers that might not already have support for it, we can use polyfills.
+
+### P25 - Understanding the Custom Elements Lifecycle
+
+1. `constructor()` -> is called when the custom element is created (not the same as adding the element to the DOM) -> useful for basic initializations.
+
+2. `connectedCallback()` -> is called when the custom element is attached to the DOM -> useful for DOM initializations.
+
+3. `disconnectedCallback()` -> is called when an element is detached from the DOM -> useful for cleanup work.
+
+4. `attributeChangedCallback()` -> is called when an observed attribute is updated -> useful for updating data + DOM.
+
+### P29 - Attributes vs Properties
+
+Do not confuse HTML attributes with DOM object properties:
+
+- Attributes are set in the HTML/DOM
+- Object properties are set programatically on a JS object
+- Attributes are often but not always linked to a property
+- Attributes are not necessarily in sync with linked property

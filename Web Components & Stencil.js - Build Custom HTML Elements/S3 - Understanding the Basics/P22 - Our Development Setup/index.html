@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            border: 1px solid orange;
+        }
+    </style>
     <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
 </head>
 <body>
-    <uc-tooltip></uc-tooltip>
+    <p><uc-tooltip text="Web Components is a set of standards.">Web Components</uc-tooltip> are awesome!</p>
+    <uc-tooltip>Hi</uc-tooltip>
+    <a is="uc-confirm-link" href="https://www.google.com">Google</a>
 </body>
 </html>
