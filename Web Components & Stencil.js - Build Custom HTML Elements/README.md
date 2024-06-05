@@ -1,4 +1,6 @@
-## What are Web Components?
+## Section 1
+
+### What are Web Components?
 
 Web components are, simply put custom HTML elements with abstracted functionality. However, there's more to it. Web components are actually a broad term for a couple of specifications that are built into web browsers that make up that web component:
 
@@ -7,7 +9,7 @@ Web components are, simply put custom HTML elements with abstracted functionalit
 - Templates & Slots: Compose multiple native HTML elements and add JavaScript logic to create powerful widgets. Template defines the core structure of the custom element whereas slots expose entry points to pass dynamic content into our web component.
 - HTML Imports (Not Continued): This was supposed to be a feature that lets you import HTML files into HTML files to avoid templates for the web components. But, this is not continued anymore as the industry moved in the direction where we use JavaScript in combination with modern build tools and JS modules to import and export.
 
-## Why Web Components?
+### Why Web Components?
 
 - Encapsulate Logic + UI
 
@@ -25,7 +27,7 @@ Web components are, simply put custom HTML elements with abstracted functionalit
   - Reuse core UI elements across projects
   - Publish as a package (via npm)
 
-## Web Components vs Frameworks (Angular, React, Vue) vs Libraries (jQuery)
+### Web Components vs Frameworks (Angular, React, Vue) vs Libraries (jQuery)
 
 - Web Components
 
@@ -46,3 +48,17 @@ Web components are, simply put custom HTML elements with abstracted functionalit
   - -Many imports
   - -Version conflicts
   - -Redundant code
+
+## Section 2
+
+### What are Web Components?
+
+```html
+<my-tooltip text="Extra Information">What?</my-tooltip>
+```
+
+Web components are custom HTML elements made up of several parts natively available in the browsers specification: custom elements, shadow DOM, templates and slots.
+
+### Browser Support
+
+Web components support all the major web browsers such as Chrome, Firefox, Safari, and Opera. For other browsers that might not already have support for it, we can use polyfills.
